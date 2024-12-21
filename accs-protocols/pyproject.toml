@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "accs-protocols"
+description = "Framework and tools for Automated Cell Culture Splitter protocol scripts"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  {name = "Greg Courville", email = "greg.courville@czbiohub.org"},
+  {name = "Joana Cabrera", email = "jcabrera219@berkeley.edu"},
+  {name = "Axel Jacobsen", email = "axelnj44@gmail.com"},
+  ]
+maintainers = [{name = "Greg Courville", email = "greg.courville@czbiohub.org"}]
+dependencies = [
+  "voila==0.5.8",
+  "ipykernel",
+  "ipysheet",
+  "ipywidgets",
+  "libcst",
+  "requests",
+  ]
+dynamic = ["version"]
+
+[project.scripts]
+npf_simulate = "accs_npf.cli.npf_simulate:main"
+npf_setup_form = "accs_npf.cli.npf_run_setup_nb:main"
+npf_init = "accs_npf.cli.npf_init:main"
+
+[tool.setuptools]
+packages = [
+  "accs_npf",
+  "accs_npf.cli",
+  "accs_npf.setup_nb",
+  ]
+
+[tool.setuptools.package-data]
+accs_npf = [
+  "resources/protocol_parts/*.py.inc",
+  "resources/jupyter_nbs/*.ipynb",
+  "resources/labware_defs/*.json",
+  "resources/sim_proxy_script/*.py",
+  "resources/config_templates/*.json"
+  ]
+
+[tool.setuptools_scm]
+root = ".."
+write_to = "accs-protocols/accs_npf/_version.py"
