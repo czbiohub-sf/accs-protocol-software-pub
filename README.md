@@ -2,7 +2,9 @@
 # ACCS protocol software
 
 ## Contents
-This distribution contains the software components of the Automated Cell Culture Splitter, except for the [Cell Counting Imager](https://github.com/czbiohub-sf/accs-cell-counting-imager-pub) software, which is available separately. Our preprint describing the Automated Cell Culture Splitter can be found on [bioRxiv](TODO)**\[TODO\]**.
+This distribution contains the software components of the Automated Cell Culture Splitter, except for the [Cell Counting Imager](https://github.com/czbiohub-sf/accs-cell-counting-imager-pub) software, which is available separately.
+
+Links to the 2024 preprint, CAD models, supplementary documentation and other resources describing the Automated Cell Culture Splitter can be found on the [main repository](https://github.com/czbiohub-sf/2024-accs-pub).
 
 See the `README.md` in `accs_npf/` and in `ot2logbot/` for more information on installation and use.
 
@@ -17,7 +19,5 @@ This software is currently maintained by Greg Courville ([:email:](mailto:greg.c
 The software in this repository is published under the BSD 3-Clause License -- see the `LICENSE` file in this directory.
 
 ## See also
-- [The preprint](TODO)**\[TODO\]** and supplements (bioRxiv)
+- [Main ACCS publication repo](https://github.com/czbiohub-sf/2024-accs-pub) (GitHub)
 - [Software for the Cell Counting Imager](https://github.com/czbiohub-sf/accs-cell-counting-imager-pub) (GitHub)
-- [CAD models for the Cell Counting Imager](TODO)**\[TODO\]** (OnShape)
-- Current versions of the [ACCS and CCI manuals](https://drive.google.com/drive/folders/1MgdO0HoPbRsYp-P-zQJTYHPDtVA4qac9?usp=drive_link) (Google Drive).
